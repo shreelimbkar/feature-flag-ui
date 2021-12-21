@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  color: #fff;
+  padding: 20px 20px;
+  text-transform: uppercase;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.setting-container {
+  padding-bottom: 15px;
+}
+.setting-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.setting-title {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.setting-card {
+  width: 445px;
+  padding: 20px 20px;
+  margin: 10px;
+  background-color: #202020;
+  border-radius: 5px;
+}
+
+.card {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.setting-icon {
+  height: 24px;
+  width: 24px;
+  background-color: #696969;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card h4 {
+  font-size: 12px;
 }
